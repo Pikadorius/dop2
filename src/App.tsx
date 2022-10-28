@@ -9,6 +9,7 @@ type ShowType = {
     completed: boolean
 }
 
+
 function App() {
     /* useEffect(() => {
          fetch('https://jsonplaceholder.typicode.com/todos')
