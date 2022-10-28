@@ -46,3 +46,9 @@ li {
   max-width: 500px;
   text-align: start;
 }
+
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  width: 300px;
+}

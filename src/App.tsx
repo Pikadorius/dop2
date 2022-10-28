@@ -32,22 +32,25 @@ function App() {
 
     const onlyUndone = () => {
         return (
-            setShow(show.filter(i=>i.completed))
+            setShow(show.filter(i => i.completed))
         )
     }
 
     const onlyDone = () => {
         return (
-            setShow(show.filter(i=>!i.completed))
+            setShow(show.filter(i => !i.completed))
         )
     }
 
     return (
         <div className="App">
-            <Button name={"Show all"} callBack={Show}/>
-            <Button name={"Clean"} callBack={clean}/>
-            <Button name={"Undone"} callBack={onlyUndone}/>
-            <Button name={"Done"} callBack={onlyDone}/>
+            <div className={"buttons"}>
+                <Button name={"Show all"} callBack={Show}/>
+                <Button name={"Undone"} callBack={onlyUndone}/>
+                <Button name={"Done"} callBack={onlyDone}/>
+                <Button name={"Clean"} callBack={clean}/>
+
+            </div>
             {show.map(i => {
 
                 return (
